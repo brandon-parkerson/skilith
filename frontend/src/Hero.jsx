@@ -125,20 +125,20 @@ export default function Hero() {
         <div className="mx-auto max-w-2xl py-32 sm:py-0 lg:py-20">
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-blue-600 sm:text-7xl ">
-              Get Your CV Optimized Now For Free!
+              Will Your CV Get Rejected? Find Out Before You Apply.
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-xl/8">
-              Use our free tool to compare your CV to Finnish job postings and
-              see how well your chances are of getting hired.{" "}
+              Upload your CV and a job posting to see your rejection risk, missing keywords, and how to improve.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-500 px-16.5 py-3.5 text-lg font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-                Improve My CV
+                Check My CV Score
               </a>
             </div>
+            <p>No Sign Up Required!</p>
           </div>
         </div>
 
@@ -180,15 +180,17 @@ export default function Hero() {
             className="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
           />
         </div>
-        <h1 className="text-center font-semibold text-blue-600 text-5xl text-balance">Get hired as an immigrant in Finland</h1>
+        <h1 className="text-center font-semibold text-blue-600 text-5xl text-balance">
+          Get hired as an immigrant in Finland
+        </h1>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-500 px-6.5 py-3.5 text-lg font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-               Get Hired Now 
-              </a>
-            </div>
+          <a
+            href="#"
+            className="rounded-md bg-indigo-500 px-6.5 py-3.5 text-lg font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+          >
+            Get Hired Now
+          </a>
+        </div>
       </div>
     </div>
   );
