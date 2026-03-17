@@ -121,7 +121,7 @@ export default function Hero() {
                 href="#"
                 className="rounded-md bg-indigo-500 px-16.5 py-3.5 text-lg font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-                Get started
+              Improve My CV
               </a>
               
             </div>
