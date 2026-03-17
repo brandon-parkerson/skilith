@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -13,15 +14,17 @@ const navigation = [
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const imageRef = useRef(null)
+  const isImageInView = useInView(imageRef, { once: true, amount: 0.3 })
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-white-900">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Skilith</span>
-                <h2 className='text-xl text-white font-serif'>Skilith</h2>
+          <div className="flex lg:flex-1 ">
+            <a href="#" className="-m-1.5 p-1.5 border-solid ">
+              <span className="sr-only ">Skilith</span>
+                 <h2 className='text-xl text-black font-serif border-2 border-solid '>Skilith</h2>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -36,13 +39,13 @@ export default function Hero() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
+              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-black">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-white">
+            <a href="#" className="text-sm/6 font-semibold text-black">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -84,7 +87,7 @@ export default function Hero() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-black hover:bg-black/5"
                   >
                     Log in
                   </a>
@@ -111,11 +114,11 @@ export default function Hero() {
         <div className="mx-auto max-w-2xl py-32 sm:py-0 lg:py-20">
           
           <div className="text-center">
-            <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl ">
+            <h1 className="text-5xl font-semibold tracking-tight text-balance text-blue-600 sm:text-7xl ">
                 Get Your CV Optimized Now For Free!
             </h1>
-            <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-              User our free tool to compare your cv to the job posting and see how well your chances are of getting hired.            </p>
+            <p className="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-xl/8">
+              Use our free tool to compare your CV to Finnish job postings and see how well your chances are of getting hired.            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
@@ -127,6 +130,33 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        
+        {/* Animated Image Section */}
+        <motion.div 
+          ref={imageRef}
+          className="mt-16"
+          initial={{ opacity: 0, y: 50 }}
+          animate={isImageInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="relative mx-auto max-w-3xl overflow-hidden rounded-xl shadow-2xl">
+            <motion.img
+              src="./src/assets/images/workplace.jpg"
+              alt="Diverse team working together in a modern office"
+              className="h-auto w-full object-cover"
+              initial={{ scale: 1.1 }}
+              animate={isImageInView ? { scale: 1 } : {}}
+              transition={{ duration: 1.2, delay: 0.2 }}
+            />
+            <motion.div 
+              className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"
+              initial={{ opacity: 0 }}
+              animate={isImageInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            />
+          </div>
+        </motion.div>
+
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
