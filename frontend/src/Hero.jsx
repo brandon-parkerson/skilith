@@ -145,14 +145,14 @@ export default function Hero() {
         {/* Animated Image Section */}
         <motion.div
           ref={imageRef}
-          className="mt-16"
+          className=""
           initial={{ opacity: 0, y: 50 }}
           animate={isImageInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="relative mx-auto max-w-3xl overflow-hidden rounded-xl shadow-2xl">
+          <div className="relative mx-auto max-w-2xl overflow-hidden rounded-xl shadow-2xl">
             <motion.img
-              src="./src/assets/images/workplace.jpg"
+              src="./src/assets/images/career-growth.jpg"
               alt="Diverse team working together in a modern office"
               className="h-auto w-full object-cover"
               initial={{ scale: 1.1 }}
