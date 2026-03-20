@@ -5,14 +5,14 @@ export default function Testimonials() {
     <>
       {/* Tesimonials Container*/}
 
-      <div className="mt-25  h-120  w-5/6 flex flex-col justify-start gap-10 justify-self-center ">
+      <div className="mt-25    w-5/6 flex flex-col justify-start gap-10 justify-self-center ">
         <h1 className="text-center font-semibold text-blue-600 text-5xl text-balance">
           The Results Speak For Themselves
         </h1>
 
         {/* Cards Container */}
 
-        <div className=" flex  gap-6 flex-wrap justify-center">
+        <div className=" flex mb-10 gap-6 flex-wrap justify-center">
           {/* Card 1*/}
           <div className="shadow-xl/50 text-white p-4 bg-gray-800 border-3 border-solid border-gray-800 rounded-xl flex flex-col justify-between w-80 shrink-0">
             {" "}
