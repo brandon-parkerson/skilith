@@ -5,16 +5,16 @@ export default function Testimonials() {
     <>
       {/* Tesimonials Container*/}
 
-      <div className="my-25  h-160 my-9 w-5/6 flex flex-col justify-start gap-10 justify-self-center w-full">
+      <div className="mt-25  h-120  w-5/6 flex flex-col justify-start gap-10 justify-self-center ">
         <h1 className="text-center font-semibold text-blue-600 text-5xl text-balance">
           The Results Speak For Themselves
         </h1>
 
         {/* Cards Container */}
 
-        <div className=" flex  gap-6 h-1/2 flex-wrap">
+        <div className=" flex  gap-6 h-full flex-wrap">
           {/* Card 1*/}
-          <div className="text-white p-2 bg-gray-800 border-3 border-solid border-gray-800  rounded-xl flex flex-1 flex-col justify-evenly ">
+          <div className="text-white p-2 h-7/8 bg-gray-800 border-3 border-solid border-gray-800  rounded-xl flex flex-1 flex-col justify-evenly ">
             {/* 5 stars image*/}
             <img
               src="./src/assets/images/5-stars.svg"
@@ -40,7 +40,7 @@ export default function Testimonials() {
           </div>
 
           {/* Card 2*/}
-          <div className="text-white p-2 bg-gray-800 border-3 border-solid   border-gray-800 rounded-xl  flex flex-1 flex-col justify-evenly">
+          <div className="text-white p-2  h-7/8 bg-gray-800 border-3 border-solid   border-gray-800 rounded-xl  flex flex-1 flex-col justify-evenly">
             {/* 5 stars image*/}
             <img
               src="./src/assets/images/5-stars.svg"
@@ -66,7 +66,7 @@ export default function Testimonials() {
           </div>
 
           {/* Card 3*/}
-          <div className="text-white p-2 bg-gray-800 border-3 border-solid border-gray-800  rounded-xl h-fit-content  flex flex-1 flex-col justify-evenly">
+          <div className="text-white p-2 h-7/8 bg-gray-800 border-3 border-solid border-gray-800  rounded-xl h-fit-content  flex flex-1 flex-col justify-evenly">
             {/* 5 stars image*/}
             <img
               src="./src/assets/images/5-stars.svg"
