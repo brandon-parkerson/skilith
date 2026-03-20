@@ -12,9 +12,10 @@ export default function Testimonials() {
 
         {/* Cards Container */}
 
-        <div className=" flex  gap-6 h-full flex-wrap">
+        <div className=" flex  gap-6 flex-wrap justify-center">
           {/* Card 1*/}
-          <div className="text-white p-2 h-7/8 bg-gray-800 border-3 border-solid border-gray-800  rounded-xl flex flex-1 flex-col justify-evenly ">
+          <div className="text-white p-4 bg-gray-800 border-3 border-solid border-gray-800 rounded-xl flex flex-col justify-between w-80 shrink-0">
+            {" "}
             {/* 5 stars image*/}
             <img
               src="./src/assets/images/5-stars.svg"
@@ -40,7 +41,7 @@ export default function Testimonials() {
           </div>
 
           {/* Card 2*/}
-          <div className="text-white p-2  h-7/8 bg-gray-800 border-3 border-solid   border-gray-800 rounded-xl  flex flex-1 flex-col justify-evenly">
+          <div className="text-white p-4 bg-gray-800 border-3 border-solid border-gray-800 rounded-xl flex flex-col justify-between w-80 shrink-0">
             {/* 5 stars image*/}
             <img
               src="./src/assets/images/5-stars.svg"
@@ -66,7 +67,7 @@ export default function Testimonials() {
           </div>
 
           {/* Card 3*/}
-          <div className="text-white p-2 h-7/8 bg-gray-800 border-3 border-solid border-gray-800  rounded-xl h-fit-content  flex flex-1 flex-col justify-evenly">
+          <div className="text-white p-4 bg-gray-800 border-3 border-solid border-gray-800 rounded-xl flex flex-col justify-between w-80 shrink-0">
             {/* 5 stars image*/}
             <img
               src="./src/assets/images/5-stars.svg"
